@@ -93,6 +93,16 @@ coverage.xml
 # Design inspiration (personal reference files)
 design-inspo/
 
+# Internal documentation (research, architecture, planning)
+# Keep README.md and user-facing docs at root
+docs/
+MILESTONE_*.md
+ARCHITECTURE.md
+PRODUCT_VISION.md
+*_PROGRESS.md
+*_RESEARCH.md
+*_NOTES.md
+
 # Temporary files
 *.tmp
 *.temp
