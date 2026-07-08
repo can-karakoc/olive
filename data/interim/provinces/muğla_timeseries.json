@@ -1,0 +1,10 @@
+{
+  "province_id": 5,
+  "province_name": "Muğla",
+  "area_ha": 3203699,
+  "date_range": {
+    "start": "2019-04-01",
+    "end": "2024-10-31"
+  },
+  "indices": {}
+}

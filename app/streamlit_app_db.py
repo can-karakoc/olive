@@ -197,7 +197,7 @@ def main():
     selected_province_name = st.sidebar.selectbox("Province", province_names)
 
     selected_province = provinces_df[provinces_df['name'] == selected_province_name].iloc[0]
-    province_id = selected_province['id']
+    province_id = int(selected_province['id'])  # Convert numpy.int64 to Python int
 
     st.sidebar.markdown("---")
     st.sidebar.header("About")
@@ -235,7 +235,7 @@ def main():
 
     if health:
         current_ndvi = health['current_ndvi']
-        current_date = health['current_date']
+        current_date = pd.to_datetime(health['current_date'])  # Convert to pandas Timestamp
         baseline_ndvi = health['baseline_ndvi']
         baseline_stddev = health['baseline_stddev']
         z_score = health['z_score']
@@ -243,7 +243,7 @@ def main():
     else:
         # Fallback
         current_ndvi = df.iloc[-1]['ndvi']
-        current_date = df.iloc[-1]['date']
+        current_date = pd.to_datetime(df.iloc[-1]['date'])  # Ensure Timestamp
         baseline_ndvi, baseline_stddev = compute_baseline_manual(df, current_date)
 
         if baseline_ndvi:

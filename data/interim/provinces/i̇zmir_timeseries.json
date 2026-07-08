@@ -30802,5 +30802,43 @@
         "value_mean": 1.1170897634759316
       }
     }
+  },
+  "quality": {
+    "total_score": 59,
+    "grade": "C-",
+    "badge": "Fair",
+    "components": {
+      "peak_ndvi": {
+        "value": 0.5792109921591331,
+        "score": 27.92109921591331,
+        "grade": "Good"
+      },
+      "season_length": {
+        "value": 14,
+        "score": 1.5555555555555556,
+        "grade": "Poor"
+      },
+      "stability": {
+        "cv": 0.026895800198893594,
+        "score": 20.0,
+        "grade": "Very Stable",
+        "years_analyzed": 5
+      },
+      "timing": {
+        "greenup_doy": 92,
+        "greenup_date": "2024-04-01",
+        "score": 10.0,
+        "grade": "Early"
+      }
+    },
+    "methodology": "Score based on: Peak NDVI (40%), Season Length (30%), Stability (20%), Timing (10%)",
+    "year": 2024,
+    "historical_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ]
   }
 }
