@@ -15,6 +15,17 @@ CREATE TABLE provinces (
     geometry GEOMETRY(MultiPolygon, 4326),  -- WGS84 coordinates
     area_ha NUMERIC(12, 2),
     elevation_m INT,
+    -- Density metrics (NEW)
+    olive_area_ha NUMERIC(12, 2),  -- Total olive grove area
+    olive_tree_count INT,  -- Estimated tree count (if available)
+    tree_count_confidence VARCHAR(20),  -- 'low', 'medium', 'high'
+    olive_coverage_pct NUMERIC(5, 2),  -- % of province that is olives
+    density_last_updated DATE,
+    -- Quality metrics (NEW)
+    quality_score INT,  -- 0-100
+    quality_grade VARCHAR(5),  -- A+, A, B, C, D, F
+    quality_badge VARCHAR(50),  -- Excellent, Good, Fair, Poor
+    quality_last_updated DATE,
     created_at TIMESTAMP DEFAULT NOW(),
     updated_at TIMESTAMP DEFAULT NOW()
 );
