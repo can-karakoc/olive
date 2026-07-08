@@ -1,0 +1,11 @@
+province,year,production_tonnes,on_off_year,source,notes
+İzmir,2024,450000,on,IOC,Estimated from national data
+Aydın,2024,320000,on,IOC,Estimated from national data
+Balıkesir,2024,180000,on,IOC,Estimated from national data
+Manisa,2024,160000,on,IOC,Estimated from national data
+Muğla,2024,95000,on,IOC,Estimated from national data
+İzmir,2025,270000,off,IOC,Forecast - 40% reduction expected
+Aydın,2025,195000,off,IOC,Forecast - 40% reduction expected
+Balıkesir,2025,110000,off,IOC,Forecast
+Manisa,2025,100000,off,IOC,Forecast
+Muğla,2025,60000,off,IOC,Forecast

@@ -1,0 +1,109 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.key
+*.json.secret
+gee-service-account.json
+
+# Data (large files)
+data/raw/
+data/interim/*.tif
+data/interim/*.tiff
+data/processed/*.tif
+data/processed/*.tiff
+*.COG
+*.nc
+*.hdf
+*.h5
+
+# Exceptions: keep small text/CSV files
+!data/labels/*.csv
+!data/geo/*.geojson
+!data/geo/*.json
+
+# Model artifacts
+models/artifacts/*.pkl
+models/artifacts/*.joblib
+models/artifacts/*.h5
+models/artifacts/*.pt
+models/artifacts/*.pth
+
+# Logs
+*.log
+logs/
+
+# Caches
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Coverage
+.coverage
+htmlcov/
+coverage.xml
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Design inspiration (personal reference files)
+design-inspo/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Next.js (webapp)
+webapp/.next/
+webapp/out/
+webapp/node_modules/
+webapp/.vercel
+
+# Streamlit
+.streamlit/secrets.toml
